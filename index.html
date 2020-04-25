@@ -1,0 +1,32 @@
+<html>
+<head>
+    <link  rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+   
+        <section>
+           <img src="./assets/bg.jpg"  id="background" >
+           <img src="./assets/moon.png"  id="moon">
+           <img src="./assets/mountain.png"  id="mountain">
+           <img src="./assets/road.png"  id="road">
+           <h2 id="heading">StarLight</h2>
+        </section>
+        <p>Behind the cloud the starlight lurks, Through showers the sunbeams fall; For God, who loveth all his works, Has left his Hope with all.</p>
+  <script type="text/javascript">
+        let bg=document.getElementById("background");
+        let moon=document.getElementById("moon");
+        let mountain=document.getElementById("mountain");
+        let road=document.getElementById("road");
+        let heading=document.getElementById("heading");
+       
+        window.addEventListener('scroll',function(){
+            var value=window.scrollY;
+            bg.style.top=value*0.5 + 'px';
+            moon.style.left= -value*0.5 + 'px';
+            mountain.style.top= -value*0.15 + 'px';
+            road.style.top= value*0.15 + 'px';
+            heading.style.top= value*1 + 'px';
+        })
+  </script>
+</body>
+</html>

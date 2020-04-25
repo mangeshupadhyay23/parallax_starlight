@@ -25,7 +25,13 @@ class App extends React.Component{
     return (
       <div className="App">
        <section>
-          <img src={background} alt='background' className='background'/>
+          <img src={background} alt='background' className='background' style={{position: absolute;
+  top:'0',
+  left: '0',
+  width: '100%'
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;}}/>
           <img src={moon} alt='moon' className='moon'/>
           <img src={mountain} alt='mountain' className='mountain'/>
           <img src={road} alt='road' className='road'/>
